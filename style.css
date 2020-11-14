@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+header {
+    background-color: darkslategray;
+    border-bottom: 3px solid red;
+}
+
+.name {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+div {
+    padding: 1em .25em;
+}
+
+#red {
+    color: red;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+    margin: 0;
+
+}
+
+.banner {
+    background: darkslategray url(img/showcase.jpg) no-repeat center;
+    background-size: cover;
+    height: 18.75em;
+    color: white;
+}
+
+
+
+.news {
+    background-color: darkslategray;
+    padding: .5em 0;
+    color: white;
+    font-size: 1em;
+}
+
+.cards {
+    background-color: lightgray;
+}
+
+footer {
+    background-color: red;
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 25%;
+}
+
+.name a,
+.main-nav a {
+    display: block;
+    color: white;
+}
+
+.important,
+.do,
+.quote {
+    margin: 1em;
+    padding: 1em;
+    color: white;
+    background-color: darkslategray;
+}
+
+.service-card {
+    background-color: lightgray;
+    padding: 1em;
+    margin: 1em;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 20em;
+}
+
+input,
+textarea {
+    margin: 0 auto;
+    padding: .5em;
+    width: 100%;
+}
+
+button {
+    padding: .5em;
+    display: block;
+    color: white;
+    background-color: red;
+    width: 100%;
+}
+
+#make-red {
+    color: red;
+}
+
+@media (min-width: 769px) {
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+   .main-header,
+    .main-nav,
+    .elements {
+        display: flex;
+    }
+
+    .main-header {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    li {
+        margin-left: 3em;
+    }
+
+    .elements {
+        justify-content: space-evenly;
+    }
+
+    .html,
+    .css,
+    .graphic {
+        margin: 0 .5em;
+    }
+
+    .subscribe,
+    .email-form {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .email-form {
+        margin: 0;
+    }
+    
+    .about {
+        width: 60%;
+        float: left;
+        text-align: justify;
+    }
+
+    .do {
+        width: 20%;
+        float: right;
+        text-align: justify;
+    }
+
+    footer {
+        clear: both;
+    }
+
+    .service {
+        float: left;
+        width: 60%;
+        text-align: justify;
+    }
+
+    .quote {
+        float: right;
+        text-align: justify;
+    }
+
+}
